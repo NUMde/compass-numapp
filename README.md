@@ -41,13 +41,15 @@ For general documentation on aspects that are component unspecific (e.g. encrypt
 
 Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og)
 
-![Component Overview](assets/componentOverview.png "Component Overview")
+<p align="center">
+    <img src="assets/componentOverview.png" alt="Component Overview" width="600">
+</p>
 
 ## An Illustrative COVID Study Conducted With the NUM-App
 
 The following example illustrates how you can use the NUM-App to digitally conduct your (clinical) studies. We consider Max who participates in a COVID-19 study at a University Hospital.
 
-![Illustrative Example English](assets/illustrativeExample_EN.png "Illustrative Example English")
+<img src="assets/studyFlow_EN.png" alt="Visualization Study Flow" width="400" align="right">
 
 ### Step 1 - Login and the first questionnaire
 Max receives a personalized QR-Code from the hospital which he can scan with the NUM-App to log in. He is then presented with a special questionnaire, as it is the first time that he uses the app. The questionnaire includes questions that Max should only answer once. Max completes the questionnaire in one go and submits it. The NUM-App transforms it into a FHIR Questionnaire Response object, encrypts it and transmits it to the mobile backend where it is persisted.
@@ -92,7 +94,7 @@ Die NUM-App ermöglicht die Darstellung von [🔥FHIR Questionnaires](https://ww
 
 ## Was ist besonders an der NUM-App?
 
-Die NUM-App ermöglicht eine einfache und digitale Durchführung von Studien auf Basis von Fragebögen. Studienteilnehmer können Fragebögen direkt auf ihrem mobilen Endgerät ausfüllen und versenden. Die Studienverantworlichen können eingereichte Antworten einfach abrufen und Fragebögen aktualisieren, ohne dass Studienteilnehmer die App neu installieren oder updaten müssen. Fragebogenantworten werden per Ende-zu-Ende-Verschlüsselung an die empfangende Instituation übermittelt, wodurch die NUM-App auch für medizinische Studien geeignet ist. Die App ist flexibel personalisierbar und kann auch auf eigene Anforderungen angepasst werden.
+Die NUM-App ermöglicht eine einfache und digitale Durchführung von Studien auf Basis von Fragebögen. Studienteilnehmer können Fragebögen direkt auf ihrem mobilen Endgerät ausfüllen und versenden. Die Studienverantwortlichen können eingereichte Antworten einfach abrufen und Fragebögen aktualisieren, ohne dass Studienteilnehmer die App neu installieren oder updaten müssen. Fragebogenantworten werden per Ende-zu-Ende-Verschlüsselung an die empfangende Institution übermittelt, wodurch die NUM-App auch für medizinische Studien geeignet ist. Die App ist flexibel personalisierbar und kann auch auf eigene Anforderungen angepasst werden.
 
 Die Hauptvorteile der App sind:
 
@@ -114,20 +116,20 @@ Die NUM-App umfasst die folgenden drei Komponenten:
  
 All diese Komponenten müssen aufgesetzt werden, um die Verwendung der App in vollem Umfang zu gewährleisten. Dies beinhaltet die Bereitstellung von FHIR Questionnaires, die Speicherung der zugehörigen Antworten sowie deren Abruf. 
 
-Die Dokumentaionen der oben verlinkten Repositories bieten weitere Informationen bezüglich Einrichtung und Konfiguration. 
+Die Dokumentation der oben verlinkten Repositories bieten weitere Informationen bezüglich Einrichtung und Konfiguration. 
 
 Generelle Inhalte (z.B. Verschlüsselung, Forking etc.), welche übergreifend von Relevanz sind, werden in den [Docs](./docs) erläutert.
 
 Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar.
 
-![Component Overview](assets/componentOverview.png "Component Overview")
-
-
+<p align="center">
+    <img src="assets/componentOverview.png" alt="Component Overview" width="600">
+</p>
 ## Eine beispielhafte COVID Studie mit der NUM-App
 
 Das folgende Beispiel illustriert wie eine digitale (klinische) Studie mit der NUM-App durchgeführt werden kann. Wir betrachten dabei Max, der an der COVID-19 Studie einer Universitätsklinik teilnimmt.
 
-![Illustrative Example German](assets/illustrativeExample_DE.png "Illustrative Example German")
+<img src="assets/studyFlow_DE.png" alt="Visualization Study Flow" width="400" align="right">
 
 ### Schritt 1 - Login und der erste Fragebogen
 Max erhält von der Klinik einen personalisierten QR-Code, welchen er für den Login in der NUM-App nutzt. Ihm wird nun ein besonderer Fragebogen präsentiert, da es sein erster Appaufruf ist. Der Fragebogen beinhaltet Fragen, die Max nur einmalig beantworten soll. Max füllt den Fragebogen aus und versendet ihn. Die NUM-App wandelt den Fragebogen in eine FHIR Questionnaire Response um, verschlüsselt diese und sendet sie zur Speicherung an das mobile Backend.
@@ -135,17 +137,17 @@ Max erhält von der Klinik einen personalisierten QR-Code, welchen er für den L
 ### Schritt 2 - Abfrage eingereichter Fragebögen
 Das Studienpersonal am Universitätsklinikum möchte überprüfen, ob neue Fragebögen eingereicht wurden. Ein Mitarbeiter führt das Downloader Script aus und erhält die verschlüsselte Questionnaire Response von Max, welche lokal entschlüsselt wird.
 
-### Schritt 3 - Der Standardfragebogens
-Das Studienpersonal hat die Fragebogen-Frequenz auf sieben Tage festgelegt. Max erhält daher jede Woche einen neuen Fragebogen. Nachdem er einen eingereicht hat, informiert ihn die NUM-App darüber, wann der nächste Fragebogen zu Verfügung steht. Da Max seine App nicht regelmäßig überprüft, schickt ihm die NUM-App eine Push-Nachricht, sobald ein neuer Fragebogen verfügbar sit. Das Studienpersonal die Benachrichtigungszeit auf 10:00 Uhr festgelegt. Daher erhält Max einmal jede Woche zu dieser Zeit eine Benachrichtigung. Max füllt den Fragebogen nicht immer direkt komplett aus, da dieser sehr lang ist. Da die NUM-App seine Zwischenantworten speichert, kann Max den Fragebogen zu jedem späteren Zeitpunkt fertigstellen.
+### Schritt 3 - Der Standardfragebogen
+Das Studienpersonal hat die Fragebogen-Frequenz auf sieben Tage festgelegt. Max erhält daher jede Woche einen neuen Fragebogen. Nachdem er einen eingereicht hat, informiert ihn die NUM-App darüber, wann der nächste Fragebogen zu Verfügung steht. Da Max seine App nicht regelmäßig überprüft, schickt ihm die NUM-App eine Push-Nachricht, sobald ein neuer Fragebogen verfügbar ist. Das Studienpersonal die Benachrichtigungszeit auf 10:00 Uhr festgelegt. Daher erhält Max einmal jede Woche zu dieser Zeit eine Benachrichtigung. Max füllt den Fragebogen nicht immer direkt komplett aus, da dieser sehr lang ist. Da die NUM-App seine Zwischenantworten speichert, kann Max den Fragebogen zu jedem späteren Zeitpunkt fertigstellen.
 
 ### Schritt 4 - Besondere Antworten
-Zu einem bestimmen Zeitpunkt beantwortet Max eine Frage des Standardfragebogens mit einem Schlüsselwert. In dieser Studie ist dies die Information, dass Max positiv auf COVID-19 getestet wurde. Dies wird durch die NUM-App erkannt. nach Absenden des Fragebogens wird das Nutzerprofil von Max automatisch auf Basis vorkonfigurierter Werte aktualisiert. Anstatt des Standardfragebogens erhält er nun einen alternativen Fragebogen. Zudem wird die Fragebogen-Frequenz auf einmal pro Tag angehoben und die Verteildauer  für den alternativen Frageboogen wird auf sieben tage gesetzt. Das bedeutet, dass Max für eine Woche lang täglich den neuen Fragebogen erhält. Danach werden die Einstellungen auf die Standardwerte zurückgesetzt.
+Zu einem bestimmten Zeitpunkt beantwortet Max eine Frage des Standardfragebogens mit einem Schlüsselwert. In dieser Studie ist dies die Information, dass Max positiv auf COVID-19 getestet wurde. Dies wird durch die NUM-App erkannt. Nach Absenden des Fragebogens wird das Nutzerprofil von Max automatisch auf Basis vorkonfigurierter Werte aktualisiert. Anstatt des Standardfragebogens erhält er nun einen alternativen Fragebogen. Zudem wird die Fragebogen-Frequenz auf einmal pro Tag angehoben und die Verteildauer für den alternativen Fragebogen wird auf sieben Tage gesetzt. Das bedeutet, dass Max für eine Woche täglich den neuen Fragebogen erhält. Danach werden die Einstellungen auf die Standardwerte zurückgesetzt.
 
 ### Schritt 5 - Einreichen eines Sonderberichts
-Max erhält wieder den Standardfragebogen. Er hat den aktuellsten bereits abgeschickt und muss sechs Tage auf den nächsten Warten. Am nächsten Tag bemerkt Max allerdings COVID-19 Symptome und fordert  einen Sonderbericht über  die App an. Wieder wird sein Nutzerprofil aktualisiert. We erhält nun einen Spezialfragebogen undabhängig von der üblichen Frequenz und kann seine Symptome direkt über diesen Fragebogen melden. Danach erhält er wieder den Standardfragebogen, da nicht anders konfiguriert. In der zwischenzeit hat das Studienpersonal jedoch die Fragebogen-Frequenz auf fünf anstat sieben Tage angehoben. Max erhält den Standardfragebogen daher nun alle fünf Tage.
+Max erhält wieder den Standardfragebogen. Er hat den aktuellsten bereits abgeschickt und muss sechs Tage auf den nächsten warten. Am nächsten Tag bemerkt Max allerdings COVID-19 Symptome und fordert einen Sonderbericht über die App an. Wieder wird sein Nutzerprofil aktualisiert. Max erhält nun einen Spezialfragebogen unabhängig von der üblichen Frequenz und kann seine Symptome direkt über diesen Fragebogen melden. Danach erhält er wieder den Standardfragebogen, da nicht anders konfiguriert. In der Zwischenzeit hat das Studienpersonal jedoch die Fragebogen-Frequenz auf fünf anstatt sieben Tage angehoben. Max erhält den Standardfragebogen daher nun alle fünf Tage.
 
 ### Schritt 6 - Abfrage eingereichter Fragebögen
-Es ist eine Weile her, dass das Studienpersonal die eingereichten Fragebögen abgerufen hat. Sie führen das Downloader Script aus und erhalten alle voon Max versendeten Antworten seit der letzten Abfrage. Sie erhalten außerdem einen Eintrag zum Sonderbericht, den Max angefordert hat. Die entschlüsselten Antworten können nun je nach Anforderung verarbeitet werden.
+Es ist eine Weile her, dass das Studienpersonal die eingereichten Fragebögen abgerufen hat. Sie führen das Downloader Script aus und erhalten alle von Max versendeten Antworten seit der letzten Abfrage. Sie erhalten außerdem einen Eintrag zum Sonderbericht, den Max angefordert hat. Die entschlüsselten Antworten können nun je nach Anforderung verarbeitet werden.
 
 ## Engagiere dich!
 
