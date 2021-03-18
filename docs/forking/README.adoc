@@ -1,0 +1,36 @@
+link:../README.adoc[← Table of Contents]
+
+== Forking Process
+
+This document explains how the collaboration on code level could be shaped for the NUM COMPASS project.
+
+=== What is Forking?
+
+Git as a distributed version control system. By design it doesn't use a client-server architecture, instead each copy has the complete history of the repository.
+
+In the day to day work it is common to have a repository on a central server that serves as the main repository where all code changes are merged. It is also called the "remote" repository in contrast to the "local" repository that resides on the developers machine.
+
+Creating a copy of a repository is called cloning. It is done by calling the `git clone` command. In this process a copy of the remote repository is created on the local machine.
+
+
+Forking is comparable to cloning a repository, as there is a clone created.
+But forking is done by the service that provides the remote repository for you.
+Forked repositories are generally "server-side clones" and usually managed and hosted by a 3rd party Git service like GitHub/Gitlab.
+
+Good introductions can be found here: 
+
+* https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow
+* https://www.toolsqa.com/git/difference-between-git-clone-and-git-fork/
+
+=== How should forking be applied in the context of NUM Compass?
+
+There will be "main" remote respositories that contain of the vanilla versions of the applications that are part of the COMPASS project.
+
+Each party that wants to use a customized version for it's own purposes need to creat forks of all needed applications. And the customizations will take place in the forked repositories.
+
+With this approach any changes in the vanilla version can be reused in the forked versions.
+Procondition to do so is, that changes in forks are not fundamental. E.g. changing folder structures will in most cases break the ability to reuse changes from the main repositories.
+
+If there are changes in a fork that might be beneficial for other forks of the COMPASS applications, then there is the option to create pull request to incorporate those into the "main" repositories.
+
+Therefore there is the need for maintainers, that take care of pull request and changes to the code in the main repositiries.

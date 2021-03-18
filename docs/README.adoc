@@ -1,0 +1,10 @@
+= COMPASS NUM-App General Topics
+
+These docs will provide you with information that are of relevance not for a specific component but for the NUM-App in general.
+Please refer to the individual repositories that are referenced link:././[here] for component specific documentation.
+
+The following documentation topics ar available (as of now):
+
+* link:./architecture[Architecture]
+* link:./forking[Forking]
+* link:./encryption[Encryption Process]

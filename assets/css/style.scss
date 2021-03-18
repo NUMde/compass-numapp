@@ -1,0 +1,80 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+body {
+  background-color: #F8F9FA;
+}
+  
+@media screen and (max-width: 950px) {
+  .general-btn, .docu-btn, .page-header {
+    font-size: 0.7em;
+  }
+}
+  
+@media screen and (max-width: 650px) {
+  .general-btn, .docu-btn, .page-header {
+    font-size: 0.5em;
+  }
+}
+
+.page-header {
+    background-color: #efefef;  
+    background-image: url(../Header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #464646;
+    padding: 3rem 5rem;
+}
+
+.page-header h3 {
+    font-size: 1em;
+}
+
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{
+  color: rgba(235,87,106,1);
+}
+
+.logo img {
+  width:35vw;
+}
+
+.general-btn {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: rgba(235,87,106,1);
+  border-style: none;
+  transition: color 0.2s;
+  font-size: 1em;
+}
+
+.general-btn:hover {
+  color: rgba(235,87,106,0.7);
+  text-decoration: none;
+}
+
+.docu-btn {
+    display: inline-block;
+    margin: 1rem 0 1rem 1rem;
+    padding: 0.5rem;
+    color: rgba(70,70,70,0.7);
+    background-color: rgba(70,70,70,0.05);
+    border-color: rgba(70,70,70,0.2);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+    font-size: 1em;
+}
+
+.docu-btn:hover {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    background-color: rgba(235,87,106,0.7);
+    border-color: rgba(235,87,106,1);
+}
+

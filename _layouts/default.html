@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    {% seo %}
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  </head>
+  <body>
+    <header class="page-header" role="banner">
+      <div class="logo">
+        <img src="assets/numLogo.png">
+      </div>
+      <h3>{{ page.description | default: site.description | default: site.github.project_tagline }}</h3>
+      <div class="general-nav">
+      <a href="https://num-compass.science/de/" class="general-btn">About COMPASS</a>
+      <a href="https://www.meetup.com/num-compass" class="general-btn">Join the Meetup</a>
+      <a href="https://github.com/NUMde" class="general-btn">View Repositories</a>
+      </div>
+      
+      <div class="docu-nav">
+      <a href="https://github.com/NUMde/compass-numapp" class="docu-btn">General Docs</a>
+      <a href="https://github.com/NUMde/compass-numapp-frontend" class="docu-btn">Frontend Docs</a>
+      <a href="https://github.com/NUMde/compass-numapp-backend" class="docu-btn">Backend Docs</a>
+      <a href="https://github.com/NUMde/compass-numapp-downloader" class="docu-btn">Downloader Docs</a>
+      </div>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+      </footer>
+    </main>
+  </body>
+</html>
