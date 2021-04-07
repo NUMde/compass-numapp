@@ -4,7 +4,8 @@
 @import "{{ site.theme }}";
 
 body {
-  background-color: #F8F9FA;
+  background-color: #FFFFFF;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
   
 @media screen and (max-width: 950px) {
@@ -35,6 +36,15 @@ body {
 
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6{
   color: rgba(235,87,106,1);
+}
+
+.block {
+  text-align:justify;
+}
+
+.main-content img {
+  max-width: 100%;
+  margin:1em;
 }
 
 .logo img {
