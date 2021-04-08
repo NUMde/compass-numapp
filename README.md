@@ -39,7 +39,8 @@ Refer to the documentation files of the linked repositories for information on s
 
 For general documentation on aspects that are component unspecific (e.g. encryption and forking), refer to the [docs](./docs).
 
-Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og)
+Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og). A collection of further links to relevant information sources is available [here](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view).
+
 
 <p align="center">
     <img src="assets/componentOverview.png" alt="Component Overview" width="600">
@@ -120,7 +121,8 @@ Die Dokumentation der oben verlinkten Repositories bieten weitere Informationen 
 
 Generelle Inhalte (z.B. Verschlüsselung, Forking etc.), welche übergreifend von Relevanz sind, werden in den [Docs](./docs) erläutert.
 
-Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar.
+Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar. Eine Sammlung von weiterführenden Links zu relevanten Informationsquellen ist [hier](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view) zu finden.
+
 
 <p align="center">
     <img src="assets/componentOverview.png" alt="Component Overview" width="600">
