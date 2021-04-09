@@ -12,11 +12,14 @@ This page provides information on the following topics below:
 
 === Components
 
+C1xx - Backend Components +
+C2xx - Frontend Components +
+C3xx - Technical Components (Middleware) +
+C4xx - University Hospital Specific Components +
+
 image:images/componentDiagram.png[Component Diagram]
 
 * **C100  Mobile Backend**: The mobile backends acts as a middleware and is used for user authentication as well as the provisioning of FHIR questionnaires.The backend coordinates the distribution of questionnaires and sets their term based on the responses of the test subjects. It handles the storage of questionnaire responses and provides interfaces for their retrieval.
-
-* **C101 Database**: The database stores all data which is processed or generated in the context of the app usage (for example FHIR questionnaires and rules). Comment: Some information that is relevant for operation is set by environment  variables.
 
 * **C110 Questionnaire Response Downloader**: The downloader retrieves the latest questionnaire response objects and triggers their removal from the database after successful retrieval.
 
@@ -24,7 +27,7 @@ image:images/componentDiagram.png[Component Diagram]
 
 * **C300 Cluster**: The cluster is used for the deployment of containerized applications.
 
-* **C301 RDBMS**: Relational database management system: 
+* **C301 RDBMS**: Relational database management system that is aimed at storing all data which is processed or generated in the context of the app usage (for example FHIR questionnaires and rules). **Comment**: Some information that is relevant for operation is set by environment  variables.
 
 * **C302 Logging**: Processes are recorded via the logging component which enables the analysis and traceability/reproducibility of error cases.
 
