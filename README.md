@@ -39,7 +39,8 @@ Refer to the documentation files of the linked repositories for information on s
 
 For general documentation on aspects that are component unspecific (e.g. encryption and forking), refer to the [docs](./docs).
 
-Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og)
+Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og). A collection of further links to relevant information sources is available [here](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view).
+
 
 <p align="center">
     <img src="assets/componentOverview.png" alt="Component Overview" width="600">
@@ -52,10 +53,10 @@ The following example illustrates how you can use the NUM-App to digitally condu
 <img src="assets/studyFlow_EN.png" alt="Visualization Study Flow" width="400" align="right">
 
 ### Step 1 - Login and the first questionnaire
-Max receives a personalized QR-Code from the hospital which he can scan with the NUM-App to log in. He is then presented with a special questionnaire, as it is the first time that he uses the app. The questionnaire includes questions that Max should only answer once. Max completes the questionnaire in one go and submits it. The NUM-App transforms it into a FHIR Questionnaire Response object, encrypts it and transmits it to the mobile backend where it is persisted.
+<div class="block">Max receives a personalized QR-Code from the hospital which he can scan with the NUM-App to log in. He is then presented with a special questionnaire, as it is the first time that he uses the app. The questionnaire includes questions that Max should only answer once. Max completes the questionnaire in one go and submits it. The NUM-App transforms it into a FHIR Questionnaire Response object, encrypts it and transmits it to the mobile backend where it is persisted.</div>
 
 ### Step 2 - Retrieval of questionnaire responses
-The study staff at the university hospital wants to check if new questionnaire responses were submitted. A staff member runs the downloader script and the encrypted response from Max is retrieved and locally decrypted.
+<div class="block">The study staff at the university hospital wants to check if new questionnaire responses were submitted. A staff member runs the downloader script and the encrypted response from Max is retrieved and locally decrypted.</div>
 
 ### Step 3 - The standard questionnaire
 The study staff defined a questionnaire frequency of seven days. Therefore, Max receives a new standard questionnaire once a week. When he completes one, the NUM-App shows him the time until the next questionnaire becomes available. As Max is not checking the NUM-App every day, a push notification is sent to him once a new questionaire becomes available. The study staff set the time of the notification to 10:00 AM so Max is reminded once a week at that time. As the questionnaire is quite long, Max doesn't always finish it at once. As the NUM-App saves his answers he can always complete the questionnaire at a later time.
@@ -90,7 +91,7 @@ We follow the code of conduct defined by the [Contributor Convenant](https://www
 
 Die NUM-App ist ein Open Source Projekt zur Ermöglichung der digitalen Durchführung von Studien auf Basis von Fragebögen. Die NUM-App ist Teil von [COMPASS](https://num-compass.science/) (Coordination on mobile pandemic apps best practice and solution sharing).
 
-Die NUM-App ermöglicht die Darstellung von [🔥FHIR Questionnaires](https://www.hl7.org/fhir/questionnaire.html) sowie die verschlüsselte Versendung und Speicherung der zugehörigen [🔥FHIR Questionnaire Responses](https://www.hl7.org/fhir/questionnaireresponse.html).
+Die NUM-App ermöglicht die Darstellung von [FHIR Questionnaires](https://www.hl7.org/fhir/questionnaire.html) sowie die verschlüsselte Versendung und Speicherung der zugehörigen [FHIR Questionnaire Responses](https://www.hl7.org/fhir/questionnaireresponse.html).
 
 ## Was ist besonders an der NUM-App?
 
@@ -120,7 +121,8 @@ Die Dokumentation der oben verlinkten Repositories bieten weitere Informationen 
 
 Generelle Inhalte (z.B. Verschlüsselung, Forking etc.), welche übergreifend von Relevanz sind, werden in den [Docs](./docs) erläutert.
 
-Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar.
+Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar. Eine Sammlung von weiterführenden Links zu relevanten Informationsquellen ist [hier](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view) zu finden.
+
 
 <p align="center">
     <img src="assets/componentOverview.png" alt="Component Overview" width="600">
@@ -132,10 +134,10 @@ Das folgende Beispiel illustriert wie eine digitale (klinische) Studie mit der N
 <img src="assets/studyFlow_DE.png" alt="Visualization Study Flow" width="400" align="right">
 
 ### Schritt 1 - Login und der erste Fragebogen
-Max erhält von der Klinik einen personalisierten QR-Code, welchen er für den Login in der NUM-App nutzt. Ihm wird nun ein besonderer Fragebogen präsentiert, da es sein erster Appaufruf ist. Der Fragebogen beinhaltet Fragen, die Max nur einmalig beantworten soll. Max füllt den Fragebogen aus und versendet ihn. Die NUM-App wandelt den Fragebogen in eine FHIR Questionnaire Response um, verschlüsselt diese und sendet sie zur Speicherung an das mobile Backend.
+<div class="block">Max erhält von der Klinik einen personalisierten QR-Code, welchen er für den Login in der NUM-App nutzt. Ihm wird nun ein besonderer Fragebogen präsentiert, da es sein erster Appaufruf ist. Der Fragebogen beinhaltet Fragen, die Max nur einmalig beantworten soll. Max füllt den Fragebogen aus und versendet ihn. Die NUM-App wandelt den Fragebogen in eine FHIR Questionnaire Response um, verschlüsselt diese und sendet sie zur Speicherung an das mobile Backend.</div>
 
 ### Schritt 2 - Abfrage eingereichter Fragebögen
-Das Studienpersonal am Universitätsklinikum möchte überprüfen, ob neue Fragebögen eingereicht wurden. Ein Mitarbeiter führt das Downloader Script aus und erhält die verschlüsselte Questionnaire Response von Max, welche lokal entschlüsselt wird.
+<div class="block">Das Studienpersonal am Universitätsklinikum möchte überprüfen, ob neue Fragebögen eingereicht wurden. Ein Mitarbeiter führt das Downloader Script aus und erhält die verschlüsselte Questionnaire Response von Max, welche lokal entschlüsselt wird.</div>
 
 ### Schritt 3 - Der Standardfragebogen
 Das Studienpersonal hat die Fragebogen-Frequenz auf sieben Tage festgelegt. Max erhält daher jede Woche einen neuen Fragebogen. Nachdem er einen eingereicht hat, informiert ihn die NUM-App darüber, wann der nächste Fragebogen zu Verfügung steht. Da Max seine App nicht regelmäßig überprüft, schickt ihm die NUM-App eine Push-Nachricht, sobald ein neuer Fragebogen verfügbar ist. Das Studienpersonal die Benachrichtigungszeit auf 10:00 Uhr festgelegt. Daher erhält Max einmal jede Woche zu dieser Zeit eine Benachrichtigung. Max füllt den Fragebogen nicht immer direkt komplett aus, da dieser sehr lang ist. Da die NUM-App seine Zwischenantworten speichert, kann Max den Fragebogen zu jedem späteren Zeitpunkt fertigstellen.
