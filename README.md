@@ -37,7 +37,7 @@ The NUM-App consists of the following three components:
 You need to set up all these components in order to enable the end-to-end usage flow of the NUM-App including the provisioning of a FHIR Questionnaire, the storage of the corresponding response and its retrieval. 
 Refer to the documentation files of the linked repositories for information on setup and configuration.
 
-For general documentation on aspects that are component unspecific (e.g. encryption and forking), refer to the [docs](./docs).
+For general documentation on aspects that are component unspecific (e.g. encryption and forking), refer to the [docs](https://github.com/NUMde/compass-numapp/tree/main/docs).
 
 Videos of our recorded enabling sessions can be accessed on [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og). A collection of further links to relevant information sources is available [here](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view).
 
@@ -119,7 +119,7 @@ All diese Komponenten müssen aufgesetzt werden, um die Verwendung der App in vo
 
 Die Dokumentation der oben verlinkten Repositories bieten weitere Informationen bezüglich Einrichtung und Konfiguration. 
 
-Generelle Inhalte (z.B. Verschlüsselung, Forking etc.), welche übergreifend von Relevanz sind, werden in den [Docs](./docs) erläutert.
+Generelle Inhalte (z.B. Verschlüsselung, Forking etc.), welche übergreifend von Relevanz sind, werden in den [Docs](https://github.com/NUMde/compass-numapp/tree/main/docs) erläutert.
 
 Die aufgezeichneten Videos der Enabling Termine sind auf [YouTube](https://www.youtube.com/channel/UC_JVfREe2bDR87dPjV7Y8og) verfügbar. Eine Sammlung von weiterführenden Links zu relevanten Informationsquellen ist [hier](https://drive.google.com/file/d/17TCqD8hVgp68FOXxgf0y6n2ms1Q3IBX3/view) zu finden.
 
