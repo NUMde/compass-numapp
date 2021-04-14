@@ -1,6 +1,6 @@
 # NUM-App
 
-[General Documentation](./docs)
+[General Documentation](https://github.com/NUMde/compass-numapp/tree/main/docs)
 
 ![App Overview](assets/numAppOverview.png "App Overview")
 
