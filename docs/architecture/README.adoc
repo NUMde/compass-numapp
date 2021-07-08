@@ -31,9 +31,9 @@ image:images/componentDiagram.png[Component Diagram]
 
 * **C302 Logging**: Processes are recorded via the logging component which enables the analysis and traceability/reproducibility of error cases.
 
-* **C303 Push Notification Service**: The service sends realtime notifications to the mobile app.Technical Component (Middleware)
-
 * **C400 Study System**: The study system provides the identifications of the study participants.
+
+* **C500 Push Notification Service**: The service sends realtime notifications to the mobile app. Technical Component (Middleware)
 
 === Component Interactions
 
