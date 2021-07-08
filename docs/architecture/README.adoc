@@ -16,6 +16,7 @@ C1xx - Backend Components +
 C2xx - Frontend Components +
 C3xx - Technical Components (Middleware) +
 C4xx - University Hospital Specific Components +
+C5xx - External Technical Components +
 
 image:images/componentDiagram.png[Component Diagram]
 
@@ -33,7 +34,7 @@ image:images/componentDiagram.png[Component Diagram]
 
 * **C400 Study System**: The study system provides the identifications of the study participants.
 
-* **C500 Push Notification Service**: The service sends realtime notifications to the mobile app. Technical Component (Middleware)
+* **C500 Push Notification Service**: The service sends realtime notifications to the mobile app. External Technical Component
 
 === Component Interactions
 
