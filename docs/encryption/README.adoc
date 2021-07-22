@@ -41,6 +41,6 @@ The signed and encrypted questionnaire responses are processed by the download s
 ** public cert: is needed by the receiver (Questionnaire Response Downloader) to verify the signed documents
 ** private key: is used by the Mobile Backend and needs to be kept secret
 
-* Receiver - Key pair
+* Recipient - Key pair
 ** public cert: is used by the Mobile Frontend to encrypt the documents
 ** private key: is needed by the receiver (Questionnaire Response Downloader) to decrypt the documents and needs to be kept secret
