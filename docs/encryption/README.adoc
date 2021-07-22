@@ -34,3 +34,13 @@ The mobile backend application will sign every batch (one page) of encrypted que
 ==== Questionnaire Response Downloader - Validation & Decryption
 
 The signed and encrypted questionnaire responses are processed by the download script. First, the signature is verified by the use of the sender's certificate. Then, the validated responses are decrypted with the private key of the recipient.
+
+==== Key Inventory
+
+* Sender - Key pair
+** public cert: is needed by the receiver (Questionnaire Response Downloader) to verify the signed documents
+** private key: is used by the Mobile Backend and needs to be kept secret
+
+* Recipient - Key pair
+** public cert: is used by the Mobile Frontend to encrypt the documents
+** private key: is needed by the receiver (Questionnaire Response Downloader) to decrypt the documents and needs to be kept secret
