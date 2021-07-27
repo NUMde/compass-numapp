@@ -1,4 +1,4 @@
-theme: cayman
+remote_theme: pages-themes/cayman@v0.2.0
 
 title: NUM COMPASS
 description: Best practices and common solutions for mobile pandemic applications
