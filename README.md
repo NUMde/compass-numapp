@@ -42,6 +42,8 @@ The NUM-App has the following components:
 
 4. [Downloader Script](https://github.com/NUMde/compass-numapp-downloader): Component to retrieve and decrypt the submitted FHIR Questionnaire Responses.
 
+5. [Conformance Checker](https://github.com/NUMde/compass-num-conformance-checker): If the application is used within the context of a COVID-19 study and produces [GECCO FHIR Ressources](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/Home) (German Corona Consensus Dataset), the checker can examine the respective app's conformance to the defined standard.
+
 You need to set up at least one Frontend, the Backend, and the Downloader Script to enable the end-to-end usage flow of the NUM-App, including the provisioning of a FHIR Questionnaire, the storage of the corresponding response and its retrieval.
 See the documentation files of the linked repositories for information on setup and configuration.
 
@@ -102,6 +104,7 @@ Apache 2.0
 MIT
 
 * [Web Frontend](https://github.com/NUMde/compass-numapp-web)
+* [Conformance Checker](https://github.com/NUMde/compass-num-conformance-checker)
 
 ### Code of conduct
 
@@ -142,6 +145,8 @@ Die NUM-App hat folgende Komponenten:
 3. [Mobile & Web Backend (+ Database)](https://github.com/NUMde/compass-numapp-backend): Backend-Komponente, welche die FHIR Questionnaires auf Basis des Nutzerkontexts bereitstellt und das Speichern der FHIR Questionnaire Responses verwaltet.
 
 4. [Downloader Script](https://github.com/NUMde/compass-numapp-downloader): Komponente zum Abrufen und Entschlüsseln eingereichter FHIR Questionnaire Responses.
+
+5. [Konformitätsprüfer](https://github.com/NUMde/compass-num-conformance-checker): Wird die Anwendung im Zusammenhang mit einer COVID-19-Studie verwendet, die [GECCO FHIR Ressourcen](https://simplifier.net/guide/GermanCoronaConsensusDataSet-ImplementationGuide/Home) (German Corona Consensus Dataset) produziert, ermöglicht diese Komponente das Überprüfen der Anwendung auf Konformität zum definierten Standard.
 
 Um die Verwendung der App in vollem Umfang zu gewährleisten, muss mindestens ein Frontend, das Backend sowie das Downloader Script aufgesetzt werden. Dies umfasst die Bereitstellung von FHIR Questionnaires, die Speicherung der zugehörigen Antworten sowie deren Abruf.
 
@@ -204,6 +209,7 @@ Apache 2.0
 MIT
 
 * [Web Frontend](https://github.com/NUMde/compass-numapp-web)
+* [Konformitätsprüfer](https://github.com/NUMde/compass-num-conformance-checker)
 
 ### Verhaltenskodex
 

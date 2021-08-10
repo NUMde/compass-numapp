@@ -20,11 +20,13 @@ C5xx - External Technical Components +
 
 image:images/componentDiagram.png[Component Diagram]
 
-* **C100  Mobile Backend**: The mobile backends acts as a middleware and is used for user authentication as well as the provisioning of FHIR questionnaires.The backend coordinates the distribution of questionnaires and sets their term based on the responses of the test subjects. It handles the storage of questionnaire responses and provides interfaces for their retrieval.
+* **C100 Backend**: The backends acts as a middleware and is used for user authentication as well as the provisioning of FHIR questionnaires.The backend coordinates the distribution of questionnaires and sets their term based on the responses of the test subjects. It handles the storage of questionnaire responses and provides interfaces for their retrieval.
 
 * **C110 Questionnaire Response Downloader**: The downloader retrieves the latest questionnaire response objects and triggers their removal from the database after successful retrieval.
 
 * **C200 Mobile App**: The mobile app allows the user to complete and send FHIR questionnaires after a login. It also displays relevant static information.
+
+* **C210 Web App**: The web app allows the user to complete and send FHIR questionnaires after a login. It also displays relevant static information.
 
 * **C300 Cluster**: The cluster is used for the deployment of containerized applications.
 
@@ -38,7 +40,7 @@ image:images/componentDiagram.png[Component Diagram]
 
 === Component Interactions
 
-The following sequence diagrams represent the interactions between the different components.
+The following sequence diagrams represent the interactions between the different components. For the sake of simplicity, there will be no different sequence diagrams for the mobile and web components, as both applications can be seen as largely interchangeable.
 They model six use cases:
 
 * <<load-questionnaire,Load Questionnaire>>
@@ -72,6 +74,8 @@ After the backend receives a 200 in response, it will trigger a questionnaire up
 
 image:images/UC4_sendPushNotification.png[Sequence Diagram UC4 - Send Push Notification]
 
+$$*$$ This functionality is limited to the mobile application and cannot be used with the webapp.
+
 ==== Retrieve Questionnaire Response
 
 image:images/UC5_retrieveQuestionnaireResponse.png[Sequence Diagram UC5 - Retrieve Questionnaire Response]
@@ -84,7 +88,7 @@ image:images/UC6_storeStudyParticipantIds.png[Sequence Diagram UC6 - Store Study
 
 === Logical Operational Model
 
-This diagram shows you where deployment units should placed. The diagram comprises execution deployment units (EXXX) and data deployment units (DXXX). Units are assigned to logical nodes (LN) which are placed in logical locations (LL). 
+This diagram shows you where deployment units should placed. The diagram comprises execution deployment units (EXXX) and data deployment units (DXXX). Units are assigned to logical nodes (LN) which are placed in logical locations (LL).
 
 image:images/logicalOperationalModel.png[Logical Operational Model]
 
